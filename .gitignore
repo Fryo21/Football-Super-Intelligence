@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Node.js
+node_modules/
+dist/
+build/
+
+# VS Code
+.vscode/
+
+# Local datasets
+data/raw/
+data/processed/
+
+# System files
+.DS_Store
+Thumbs.db
