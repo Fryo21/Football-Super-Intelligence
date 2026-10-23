@@ -1,0 +1,85 @@
+
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FSI Canonical Match Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "event_id",
+    "match_id",
+    "source",
+    "event_type",
+    "match_second",
+    "tick",
+    "half",
+    "player_id"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "match_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "string",
+      "const": "footysim"
+    },
+    "event_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "match_second": {
+      "type": "number",
+      "minimum": 0
+    },
+    "tick": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "half": {
+      "type": "integer",
+      "enum": [1, 2]
+    },
+    "team_id": {
+      "type": ["string", "null"]
+    },
+    "player_id": {
+      "type": ["string", "null"]
+    },
+    "target_player_id": {
+      "type": ["string", "null"]
+    },
+    "event_location": {
+      "type": ["array", "null"],
+      "prefixItems": [
+        {"type": "number"},
+        {"type": "number"}
+      ],
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "distance": {
+      "type": ["number", "null"]
+    },
+    "pressure": {
+      "type": ["number", "null"]
+    },
+    "outcome": {
+      "type": ["string", "null"]
+    },
+    "xg": {
+      "type": ["number", "null"]
+    },
+    "properties": {
+      "type": "object"
+    }
+  }
+}

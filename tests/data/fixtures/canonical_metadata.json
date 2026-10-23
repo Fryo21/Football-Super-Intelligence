@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0.0",
+  "match_id": "fsi_f4300163f680338b",
+  "source": "footysim",
+  "engine": "footysim-phase1",
+  "seed": 42,
+  "config": {
+    "carry_log_interval": 10,
+    "contest_interval": 5,
+    "decide_interval": 24,
+    "duel_episode_ticks": 60,
+    "duel_grace_ticks": 25,
+    "frame_interval": 5,
+    "half_ticks": 27000,
+    "tick_seconds": 0.1
+  },
+  "teams": {
+    "BLU": {
+      "formation": "4-3-3",
+      "instructions": {
+        "line_height": 42.0,
+        "mentality": 44.0,
+        "pressing": 40.0,
+        "tempo": 45.0,
+        "width": 50.0
+      },
+      "name": "Blue United",
+      "players": [
+        {
+          "form": 60.0,
+          "name": "Blue United GK",
+          "pid": "BLU_GK",
+          "role": "GK",
+          "sharpness": 82.0
+        },
+        {
+          "form": 26.0,
+          "name": "Blue United RB",
+          "pid": "BLU_RB",
+          "role": "RB",
+          "sharpness": 81.0
+        },
+        {
+          "form": 47.0,
+          "name": "Blue United RCB",
+          "pid": "BLU_RCB",
+          "role": "RCB",
+          "sharpness": 78.0
+        },
+        {
+          "form": 32.0,
+          "name": "Blue United LCB",
+          "pid": "BLU_LCB",
+          "role": "LCB",
+          "sharpness": 88.0
+        },
+        {
+          "form": 68.0,
+          "name": "Blue United LB",
+          "pid": "BLU_LB",
+          "role": "LB",
+          "sharpness": 86.0
+        },
+        {
+          "form": 43.0,
+          "name": "Blue United RCM",
+          "pid": "BLU_RCM",
+          "role": "RCM",
+          "sharpness": 91.0
+        },
+        {
+          "form": 65.0,
+          "name": "Blue United CM",
+          "pid": "BLU_CM",
+          "role": "CM",
+          "sharpness": 85.0
+        },
+        {
+          "form": 63.0,
+          "name": "Blue United LCM",
+          "pid": "BLU_LCM",
+          "role": "LCM",
+          "sharpness": 96.0
+        },
+        {
+          "form": 51.0,
+          "name": "Blue United RW",
+          "pid": "BLU_RW",
+          "role": "RW",
+          "sharpness": 81.0
+        },
+        {
+          "form": 60.0,
+          "name": "Blue United ST",
+          "pid": "BLU_ST",
+          "role": "ST",
+          "sharpness": 89.0
+        },
+        {
+          "form": 71.0,
+          "name": "Blue United LW",
+          "pid": "BLU_LW",
+          "role": "LW",
+          "sharpness": 77.0
+        }
+      ],
+      "synergy": 52.0
+    },
+    "RED": {
+      "formation": "4-3-3",
+      "instructions": {
+        "line_height": 60.0,
+        "mentality": 58.0,
+        "pressing": 70.0,
+        "tempo": 62.0,
+        "width": 55.0
+      },
+      "name": "Red Rovers",
+      "players": [
+        {
+          "form": 55.0,
+          "name": "Red Rovers GK",
+          "pid": "RED_GK",
+          "role": "GK",
+          "sharpness": 98.0
+        },
+        {
+          "form": 73.0,
+          "name": "Red Rovers RB",
+          "pid": "RED_RB",
+          "role": "RB",
+          "sharpness": 83.0
+        },
+        {
+          "form": 50.0,
+          "name": "Red Rovers RCB",
+          "pid": "RED_RCB",
+          "role": "RCB",
+          "sharpness": 83.0
+        },
+        {
+          "form": 63.0,
+          "name": "Red Rovers LCB",
+          "pid": "RED_LCB",
+          "role": "LCB",
+          "sharpness": 87.0
+        },
+        {
+          "form": 66.0,
+          "name": "Red Rovers LB",
+          "pid": "RED_LB",
+          "role": "LB",
+          "sharpness": 73.0
+        },
+        {
+          "form": 78.0,
+          "name": "Red Rovers RCM",
+          "pid": "RED_RCM",
+          "role": "RCM",
+          "sharpness": 87.0
+        },
+        {
+          "form": 65.0,
+          "name": "Red Rovers CM",
+          "pid": "RED_CM",
+          "role": "CM",
+          "sharpness": 86.0
+        },
+        {
+          "form": 49.0,
+          "name": "Red Rovers LCM",
+          "pid": "RED_LCM",
+          "role": "LCM",
+          "sharpness": 91.0
+        },
+        {
+          "form": 67.0,
+          "name": "Red Rovers RW",
+          "pid": "RED_RW",
+          "role": "RW",
+          "sharpness": 86.0
+        },
+        {
+          "form": 52.0,
+          "name": "Red Rovers ST",
+          "pid": "RED_ST",
+          "role": "ST",
+          "sharpness": 93.0
+        },
+        {
+          "form": 41.0,
+          "name": "Red Rovers LW",
+          "pid": "RED_LW",
+          "role": "LW",
+          "sharpness": 75.0
+        }
+      ],
+      "synergy": 68.0
+    }
+  }
+}

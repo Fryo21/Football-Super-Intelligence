@@ -1,0 +1,104 @@
+
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FSI Match Metadata v1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "match_id",
+    "source",
+    "engine",
+    "seed",
+    "config",
+    "teams"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "match_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "const": "footysim"
+    },
+    "engine": {
+      "type": "string"
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "config": {
+      "type": "object",
+      "required": [
+        "tick_seconds",
+        "frame_interval",
+        "half_ticks"
+      ],
+      "properties": {
+        "tick_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "frame_interval": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "half_ticks": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "teams": {
+      "type": "object",
+      "minProperties": 2,
+      "maxProperties": 2,
+      "additionalProperties": {
+        "$ref": "#/$defs/team"
+      }
+    }
+  },
+  "$defs": {
+    "team": {
+      "type": "object",
+      "required": [
+        "name",
+        "formation",
+        "players",
+        "instructions"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "formation": {
+          "type": "string"
+        },
+        "players": {
+          "type": "array",
+          "minItems": 11,
+          "maxItems": 11,
+          "items": {
+            "type": "object",
+            "required": ["pid", "name", "role"],
+            "properties": {
+              "pid": {"type": "string"},
+              "name": {"type": "string"},
+              "role": {"type": "string"}
+            },
+            "additionalProperties": true
+          }
+        },
+        "instructions": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}
