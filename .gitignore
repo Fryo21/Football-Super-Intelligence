@@ -93,3 +93,5 @@ $RECYCLE.BIN/
 
 # Third-party Footysim source (licence pending)
 /data/sources/footysim/
+
+git ls-files -- .env ".env.*"
